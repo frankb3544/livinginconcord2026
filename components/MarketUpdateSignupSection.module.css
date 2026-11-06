@@ -1,0 +1,100 @@
+@layer base {
+  .section {
+    background-color: color-mix(in srgb, var(--primary) 8%, var(--background));
+    padding: var(--spacing-16) var(--spacing-4);
+    border-top: 1px solid color-mix(in srgb, var(--primary) 18%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--primary) 18%, transparent);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-8);
+  }
+
+  @media (min-width: 1024px) {
+    .inner {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--spacing-12);
+    }
+  }
+
+  .textBlock {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .iconRow {
+    margin-bottom: var(--spacing-4);
+  }
+
+  .mailIcon {
+    color: var(--primary);
+  }
+
+  .heading {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-3) 0;
+    letter-spacing: -0.01em;
+  }
+
+  .subheading {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--muted-foreground);
+    margin: 0;
+    max-width: 480px;
+  }
+
+  .form {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    .form {
+      width: auto;
+      min-width: 480px;
+    }
+  }
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  @media (min-width: 600px) {
+    .fields {
+      flex-direction: row;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    .input {
+      flex: 1;
+      min-width: 160px;
+    }
+
+    .submitButton {
+      flex-shrink: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .fields {
+      flex-wrap: nowrap;
+    }
+  }
+}

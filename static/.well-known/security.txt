@@ -1,0 +1,4 @@
+Contact: mailto:hello@livinginconcordnc.com
+Expires: 2027-04-01T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://livinginconcordnc.com/.well-known/security.txt

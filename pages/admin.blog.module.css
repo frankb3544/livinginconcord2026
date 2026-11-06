@@ -1,0 +1,137 @@
+@layer base {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: var(--spacing-4);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .title {
+    font-family: var(--font-family-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-1) 0;
+  }
+
+  .subtitle {
+    color: var(--muted-foreground);
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .tableContainer {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow-x: auto;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  .table th {
+    font-weight: 600;
+    color: var(--muted-foreground);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: var(--spacing-4) var(--spacing-5);
+    border-bottom: 1px solid var(--border);
+    background-color: color-mix(in srgb, var(--card) 95%, black);
+  }
+
+  .table td {
+    padding: var(--spacing-4) var(--spacing-5);
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+
+  .table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .table tr:hover td {
+    background-color: color-mix(in srgb, var(--card) 98%, var(--primary) 2%);
+  }
+
+  .titleCell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .postTitle {
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  .postSlug {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    font-family: var(--font-family-monospace);
+  }
+
+  .dateCell {
+    color: var(--muted-foreground);
+    font-size: 0.875rem;
+  }
+
+  .actionsCell {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .deleteButton {
+    color: var(--error);
+  }
+
+  .deleteButton:hover {
+    background-color: color-mix(in srgb, var(--error) 10%, transparent);
+    color: var(--error);
+  }
+
+  .emptyState {
+    text-align: center;
+    padding: var(--spacing-10) !important;
+    color: var(--muted-foreground);
+  }
+
+  .skeletonTitle {
+    width: 60%;
+    height: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skeletonBadge {
+    width: 6rem;
+    height: 1.5rem;
+    border-radius: var(--radius-full);
+  }
+
+  .skeletonDate {
+    width: 5rem;
+    height: 1rem;
+  }
+
+  .skeletonActions {
+    width: 4rem;
+    height: 1.5rem;
+    margin-left: auto;
+  }
+
+  :global(.dark) .table th {
+    background-color: color-mix(in srgb, var(--card) 95%, white);
+  }
+}

@@ -1,0 +1,24 @@
+@layer base {
+  .iconWrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--spacing-3);
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+
+  .submitButton {
+    width: 100%;
+    margin-top: var(--spacing-2);
+  }
+}

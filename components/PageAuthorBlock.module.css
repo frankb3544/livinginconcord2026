@@ -1,0 +1,104 @@
+@layer base {
+  .container {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-6) var(--spacing-4);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .authorContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+    align-items: center;
+  }
+
+  .writtenBy {
+    font-size: 1.125rem;
+    color: var(--foreground);
+    margin: 0;
+  }
+
+  .nameLink {
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+  }
+
+  .nameLink:hover,
+  .nameLink:focus-visible {
+    text-decoration: underline;
+  }
+
+  .title {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--foreground);
+    margin: var(--spacing-2) 0 0;
+  }
+
+  .brokerage {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin: 0;
+  }
+
+  .serviceArea {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin: 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    margin: var(--spacing-3) 0 var(--spacing-2);
+    font-size: 0.875rem;
+    color: var(--foreground);
+  }
+
+  .contact a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .contact a:hover,
+  .contact a:focus-visible {
+    text-decoration: underline;
+  }
+
+  .contactDivider {
+    color: var(--muted-foreground);
+    opacity: 0.5;
+  }
+
+  .updated {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .disclaimerContainer {
+    margin-top: var(--spacing-4);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--border);
+  }
+
+  .disclaimerText {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    margin: 0;
+    line-height: 1.5;
+  }
+}

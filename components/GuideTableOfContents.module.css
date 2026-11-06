@@ -1,0 +1,123 @@
+@layer base {
+  .section {
+    background-color: var(--background);
+    padding: var(--spacing-20) 0;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+  }
+
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: var(--spacing-12);
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-3) 0;
+    letter-spacing: -0.01em;
+  }
+
+  .sectionSubtitle {
+    font-size: 1.125rem;
+    color: var(--muted-foreground);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .tocWrapper {
+    background-color: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .tocHeader {
+    background-color: var(--secondary);
+    padding: var(--spacing-4) var(--spacing-6);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .tocHeaderLabel {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    background-color: color-mix(in srgb, var(--primary) 20%, transparent);
+    color: var(--primary);
+    border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+    border-radius: var(--radius-full);
+    padding: var(--spacing-1) var(--spacing-3);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .chaptersGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: var(--spacing-4);
+    gap: var(--spacing-2);
+  }
+
+  @media (min-width: 768px) {
+    .chaptersGrid {
+      grid-template-columns: repeat(2, 1fr);
+      padding: var(--spacing-6);
+      gap: var(--spacing-3);
+    }
+  }
+
+  .chapterRow {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-md);
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    transition: box-shadow var(--animation-duration-fast) ease;
+  }
+
+  .chapterRow:hover {
+    box-shadow: var(--shadow);
+  }
+
+  .chapterNumber {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--primary);
+    min-width: 1.75rem;
+    line-height: 1.3;
+    flex-shrink: 0;
+  }
+
+  .chapterContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+  }
+
+  .chapterTitle {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--foreground);
+    line-height: 1.4;
+  }
+
+  .chapterDescription {
+    font-size: 0.85rem;
+    color: var(--muted-foreground);
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,74 @@
+@layer base {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  .loadingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  .skeletonHeader {
+    width: 100%;
+    height: 4rem;
+  }
+
+  .skeletonGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+  }
+
+  @media (min-width: 1024px) {
+    .skeletonGrid {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  .skeletonMain {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .skeletonInput {
+    height: 3rem;
+  }
+
+  .skeletonContent {
+    height: 20rem;
+  }
+
+  .skeletonSide {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .skeletonCard {
+    height: 15rem;
+    border-radius: var(--radius-md);
+  }
+
+  .notFoundContainer {
+    padding: var(--spacing-10);
+    text-align: center;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+
+  .backLink {
+    margin-top: var(--spacing-4);
+    background: none;
+    border: none;
+    color: var(--primary);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+}

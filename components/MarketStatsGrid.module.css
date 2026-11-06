@@ -1,0 +1,354 @@
+@layer base {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-4);
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  .card {
+    background-color: var(--muted);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+
+  .cardLabel {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted-foreground);
+  }
+
+  .cardValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--foreground);
+    line-height: 1.2;
+  }
+
+  @media (min-width: 768px) {
+    .cardValue {
+      font-size: 1.75rem;
+    }
+  }
+
+  .cardSubtext {
+    font-size: 0.8125rem;
+    color: var(--muted-foreground);
+    margin-top: auto;
+  }
+
+  .change {
+    font-weight: 500;
+  }
+
+  .change_up {
+    color: var(--success);
+  }
+
+  .change_down {
+    color: var(--error);
+  }
+
+  .change_neutral {
+    color: var(--muted-foreground);
+  }
+
+  .chartsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  @media (min-width: 1024px) {
+    .chartsContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+    }
+  }
+
+  .chartCard,
+  .chartCardFullWidth {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    background-color: var(--card);
+    overflow: hidden;
+  }
+
+  .chartTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-1) 0;
+  }
+
+  .chartSubtitle {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin: 0;
+  }
+
+  .chartWrapper {
+    min-height: 280px;
+    width: 100%;
+    margin-top: var(--spacing-2);
+    margin-bottom: var(--spacing-4);
+  }
+
+  .neighborhoodChartWrapper {
+    margin-bottom: 0;
+  }
+
+  .chartDisclaimer {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    margin: 0;
+    margin-top: auto;
+    line-height: 1.4;
+  }
+
+    .sectionDisclaimer {
+    font-size: 0.6875rem;
+    color: var(--muted-foreground);
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.7;
+  }
+
+  .combinedDisclaimer {
+    font-size: 0.6875rem; /* 11px */
+    color: var(--muted-foreground);
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Custom Tooltip */
+  .customTooltip {
+    background-color: var(--popup);
+    color: var(--popup-foreground);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-3);
+    border: 1px solid var(--border);
+    max-width: 300px;
+    font-family: var(--font-family-base);
+  }
+
+  .tooltipTitle {
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-2);
+    color: var(--popup-foreground);
+    padding-bottom: var(--spacing-2);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tooltipContent {
+    font-size: 0.875rem;
+    color: var(--popup-foreground);
+    font-weight: 500;
+  }
+
+  /* Gauge Component */
+  .gaugeContainer {
+    margin: var(--spacing-6) 0 var(--spacing-4);
+    padding: 0 var(--spacing-2);
+  }
+
+  .gaugeTrack {
+    height: 12px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #639922 0%, #639922 40%, #EF9F27 40%, #EF9F27 60%, #E24B4A 60%, #E24B4A 100%);
+    position: relative;
+  }
+
+  .gaugeIndicator {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #ffffff;
+    border: 2px solid #185FA5;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  .gaugeLabels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing-3);
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    font-weight: 500;
+  }
+
+  .gaugeLabelLeft {
+    text-align: left;
+    width: 33%;
+  }
+
+  .gaugeLabelCenter {
+    text-align: center;
+    width: 33%;
+  }
+
+  .gaugeLabelRight {
+    text-align: right;
+    width: 33%;
+  }
+
+  .gaugeDescription {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--muted-foreground);
+    margin: 0;
+  }
+
+  /* FAQ Section */
+  .faqWrapper {
+    margin-top: var(--spacing-2);
+  }
+
+  .tickLink {
+    text-decoration: none;
+    color: var(--primary);
+  }
+
+  .tickText {
+    transition: fill 0.2s ease;
+  }
+
+  .tickLink:hover .tickText {
+    fill: var(--primary);
+    text-decoration: underline;
+  }
+
+  /* Buyer/Seller Tips Section */
+  .tipsSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-6);
+    padding-top: var(--spacing-6);
+    border-top: 1px solid var(--border);
+  }
+
+  @media (min-width: 768px) {
+    .tipsSection {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .tipsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .tipsTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin: 0;
+  }
+
+  .tipsList {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: var(--muted-foreground);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+
+  .tipsLink {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    margin-top: var(--spacing-2);
+    display: inline-block;
+  }
+
+  .tipsLink:hover {
+    text-decoration: underline;
+  }
+
+  /* CTA Banner */
+  .ctaBanner {
+    background-color: #185FA5;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    color: #ffffff;
+  }
+
+  @media (min-width: 640px) {
+    .ctaBanner {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .ctaContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+  }
+
+  .ctaTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .ctaSubtitle {
+    font-size: 0.8125rem;
+    opacity: 0.85;
+  }
+
+  .ctaButton {
+    background-color: #ffffff !important;
+    color: #185FA5 !important;
+    border-color: #ffffff !important;
+    white-space: nowrap;
+    align-self: flex-start;
+  }
+
+  .ctaButton:hover {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  @media (min-width: 640px) {
+    .ctaButton {
+      align-self: auto;
+    }
+  }
+}

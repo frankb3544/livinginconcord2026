@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--spacing-4);
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.title {
+  font-family: var(--font-family-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--muted-foreground);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.tableContainer {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  background-color: color-mix(in srgb, var(--card) 95%, var(--muted) 5%);
+  padding: var(--spacing-4);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--spacing-4);
+  font-size: 0.9375rem;
+  color: var(--card-foreground);
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr:hover {
+  background-color: color-mix(in srgb, var(--card) 98%, var(--muted) 2%);
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.positive {
+  color: var(--success);
+  font-weight: 500;
+}
+
+.negative {
+  color: var(--error);
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.deleteBtn {
+  color: var(--error);
+}
+
+.deleteBtn:hover {
+  background-color: color-mix(in srgb, var(--error) 10%, transparent);
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--spacing-12) !important;
+  color: var(--muted-foreground);
+  font-style: italic;
+}
+
+.editRow {
+  background-color: color-mix(in srgb, var(--primary) 5%, var(--card) 95%) !important;
+}
+
+.monthYearInputs {
+  display: flex;
+  gap: var(--spacing-2);
+  min-width: 180px;
+}
+
+.selectTrigger {
+  flex: 1;
+}
+
+.yearInput {
+  width: 80px;
+}

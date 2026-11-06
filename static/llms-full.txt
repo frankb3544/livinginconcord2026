@@ -1,0 +1,139 @@
+# LivingInConcord — Concord NC Real Estate Authority Markdown Map
+
+LivingInConcord.com is the definitive online resource for people relocating to Concord, NC. Managed by Franklin Bellamy—an NC Licensed Real Estate Broker, Relocation Specialist, and area expert with over 15 years of experience at Lifestyle International Realty / Unlocking Real Estate—the site provides authoritative guides, market data, and neighborhood insights for the Greater Charlotte metro area.
+
+## Neighborhood Guides
+
+### Afton Village
+- URL: https://livinginconcordnc.com/neighborhoods/afton-village
+- Price Range: $300,000 – $680,000
+- Median Price: $450,000
+- School Zone: Winecoff Elementary, Northwest Cabarrus Middle, Northwest Cabarrus High
+- Commute Time: 30 minutes to Uptown Charlotte
+- Key Features: Master-planned community, walkable streets, nearby shopping at Afton Ridge, traditional Southern charm.
+- Description: Afton Village offers a traditional neighborhood design with tree-lined streets, sidewalks, and local parks, perfect for those seeking a highly walkable, tight-knit community feel.
+
+### Christenbury
+- URL: https://livinginconcordnc.com/neighborhoods/christenbury
+- Price Range: $650,000 – $1,600,000
+- Median Price: $850,000
+- School Zone: Cox Mill Elementary, Harris Road Middle, Cox Mill High
+- Commute Time: 25 minutes to Uptown Charlotte
+- Key Features: Prestigious master-planned community, resort-style amenities, grand clubhouse, swimming pool, and tennis courts.
+- Description: Christenbury is a premier luxury community offering exceptional amenities, custom-built estates, and beautifully crafted homes located in a highly sought-after school district.
+
+### The Cox Mill Area
+- URL: https://livinginconcordnc.com/neighborhoods/cox-mill
+- Price Range: $340,000 – $560,000
+- Median Price: $450,000
+- School Zone: Cox Mill Elementary, Harris Road Middle, Cox Mill High
+- Commute Time: 25 minutes to Uptown Charlotte
+- Key Features: Top-tier academic zoning, robust youth sports programs, multiple subdivisions.
+- Description: The Cox Mill Area represents a highly family-oriented corridor encompassing multiple distinct subdivisions united by their zoning to the acclaimed Cox Mill educational pipeline.
+
+### Highland Creek
+- URL: https://livinginconcordnc.com/neighborhoods/highland-creek
+- Price Range: $300,000 – $835,000
+- Median Price: $525,000
+- School Zone: W.R. Odell Elementary, Harris Road Middle, Cox Mill High
+- Commute Time: 25 minutes to Uptown Charlotte
+- Key Features: 18-hole championship golf course, multiple community pools, fitness center, extensive walking trails.
+- Description: Straddling the Charlotte and Concord border, Highland Creek is one of the largest and most amenity-rich master-planned communities in North Carolina, offering diverse housing options.
+
+### Laurel Park
+- URL: https://livinginconcordnc.com/neighborhoods/laurel-park
+- Price Range: $400,000 – $897,000
+- Median Price: $610,000
+- School Zone: W.R. Odell Elementary, Harris Road Middle, Cox Mill High
+- Commute Time: 25 minutes to Uptown Charlotte
+- Key Features: Spacious single-family homes, resort-style pool, clubhouse, tennis courts, multiple cul-de-sacs.
+- Description: Laurel Park is a serene, well-established neighborhood known for its spacious lots, mature trees, and active community association that hosts regular neighborhood events.
+
+### Moss Creek
+- URL: https://livinginconcordnc.com/neighborhoods/moss-creek
+- Price Range: $325,000 – $700,000
+- Median Price: $485,000
+- School Zone: W.R. Odell Elementary, Harris Road Middle, Cox Mill High
+- Commute Time: 25 minutes to Uptown Charlotte
+- Key Features: Olympic-sized pool, nature trails, fitness center, basketball and tennis courts.
+- Description: Moss Creek features beautifully landscaped grounds, generous lot sizes, and a quiet, family-friendly environment with exceptional recreational facilities.
+
+### Roberta Ridge
+- URL: https://livinginconcordnc.com/neighborhoods/roberta-ridge
+- Price Range: $390,000 – $505,000
+- Median Price: $460,000
+- School Zone: Roberta Road Middle, Jay M. Robinson High
+- Commute Time: 35 minutes to Uptown Charlotte
+- Key Features: D.R. Horton homes, traditional and Arts & Crafts styles, proximity to Downtown Concord.
+- Description: Roberta Ridge offers relatively newer construction with modern layouts and Craftsman-inspired exteriors, providing excellent value slightly removed from the busiest commercial corridors.
+
+### Skybrook
+- URL: https://livinginconcordnc.com/neighborhoods/skybrook
+- Price Range: $400,000 – $1,300,000
+- Median Price: $710,000
+- School Zone: W.R. Odell Elementary, Harris Road Middle, Cox Mill High
+- Commute Time: 30 minutes to Uptown Charlotte
+- Key Features: Premier golf course, swim and racquet club, rolling hills, luxury custom homes.
+- Description: Skybrook is a highly desirable golf course community offering elevated luxury living, picturesque views, and active lifestyle amenities set against beautiful rolling topography.
+
+### The Mills at Rocky River
+- URL: https://livinginconcordnc.com/neighborhoods/mills-at-rocky-river
+- Price Range: $300,000 – $380,000
+- Median Price: $340,000
+- School Zone: Patriots STEM Elementary, C.C. Griffin Middle, Central Cabarrus High
+- Commute Time: 30 minutes to Uptown Charlotte
+- Key Features: New construction townhomes, community pool, fitness center, convenient access to I-485.
+- Description: The Mills at Rocky River provides accessible, low-maintenance townhome living built primarily by Ryan Homes, perfect for first-time buyers and downsizers.
+
+### Winding Walk
+- URL: https://livinginconcordnc.com/neighborhoods/winding-walk
+- Price Range: $500,000 – $990,000
+- Median Price: $680,000
+- School Zone: W.R. Odell Elementary, Harris Road Middle, Cox Mill High
+- Commute Time: 25 minutes to Uptown Charlotte
+- Key Features: Modern energy-efficient construction, community pool, playground, walking trails.
+- Description: Winding Walk is a newer, vibrant development featuring contemporary home designs, robust community infrastructure, and seamless access to major shopping centers like Concord Mills.
+
+### Kellswater Bridge
+- URL: https://livinginconcordnc.com/neighborhoods/kellswater-bridge
+- Price Range: $400,000 – $800,000
+- Median Price: $550,000
+- School Zone: Charles E. Boger Elementary, Northwest Cabarrus Middle, Northwest Cabarrus High
+- Commute Time: 35 minutes to Uptown Charlotte
+- Key Features: Multi-million dollar amenity center, resort-style pool, tennis courts, scenic walking paths.
+- Description: Kellswater Bridge is a picturesque community inspired by traditional Southern architecture, known for its extensive amenities and welcoming front-porch lifestyle.
+
+### 28027 Zip Code Guide
+- URL: https://livinginconcordnc.com/neighborhoods/28027-concord-nc
+- Price Range: $300,000 – $1,600,000+
+- Median Price: $370,000
+- School Zone: Cabarrus County Schools (primarily the Cox Mill pipeline)
+- Commute Time: 25-35 minutes to Uptown Charlotte
+- Key Features: Rapid growth corridor, excellent retail access, concentrated high-end developments.
+- Description: A comprehensive overview of the 28027 zip code covering Northwest Concord, detailing real estate trends, primary neighborhoods, and lifestyle amenities.
+
+## Relocation Sub-Guides & Resources
+
+- Moving to Concord, NC (Main Guide): Comprehensive 3000+ word relocation resource with free downloadable PDF. (https://livinginconcordnc.com/moving-to-concord)
+- Cost of Living in Concord, NC: 2026 breakdown of housing costs, property taxes (~$0.67/$100), utilities, and everyday expenses. (https://livinginconcordnc.com/moving-to-concord/cost-of-living-concord-nc)
+- Cox Mill High School Guide: Complete family guide to academics, athletics, and zoned neighborhoods for Cox Mill High. (https://livinginconcordnc.com/moving-to-concord/cox-mill-high-school)
+- Is Concord NC Safe?: Area-by-area safety breakdown, police resources, and comparative safety analysis. (https://livinginconcordnc.com/moving-to-concord/is-concord-nc-safe)
+- Moving from NYC to Concord NC: specialized timeline, cost of living comparison, and culture shock guide for Northeastern transplants. (https://livinginconcordnc.com/moving-to-concord/moving-from-new-york-to-concord-nc)
+- Concord NC vs Harrisburg NC: Comprehensive comparison of lifestyle, taxes, and housing between the two neighboring cities. (https://livinginconcordnc.com/blog/concord-vs-harrisburg-nc)
+- Kannapolis NC Real Estate: Resources and housing options for the adjacent city of Kannapolis. (https://livinginconcordnc.com/service-areas/kannapolis)
+
+## Market Data Summary (Spring 2026)
+- Median Home Price: $370,000
+- Average Sale Price: $398,275
+- Average Days on Market: 60 days
+- List-to-Sale Ratio: 95.4%
+- Inventory Levels: 2.6 months supply
+- YTD Appreciation: +1.4%
+- Market Context: Steady growth with high demand in top-rated school zones. Data sourced from Canopy MLS, Inc.
+
+## Contact Information
+- Broker: Franklin Bellamy
+- Brokerage: Lifestyle International Realty / Unlocking Real Estate
+- Phone: (704) 904-5142
+- Email: hello@livinginconcordnc.com
+- Schedule Consultation: https://livinginconcordnc.com/contact

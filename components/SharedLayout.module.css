@@ -1,0 +1,336 @@
+@layer base {
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .headerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    text-decoration: none;
+    color: var(--foreground);
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-family: var(--font-family-heading);
+  }
+
+  .logoIcon {
+    color: var(--primary);
+  }
+
+  .logoImg {
+    height: 42px;
+    width: auto;
+    display: block;
+  }
+
+  .footerLogoChip {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 6px 10px;
+    line-height: 0;
+  }
+
+  .footerLogoImg {
+    height: 36px;
+    width: auto;
+    display: block;
+  }
+
+  .desktopNav {
+    display: none;
+    align-items: center;
+    gap: var(--spacing-6);
+  }
+
+  @media (min-width: 768px) {
+    .desktopNav {
+      display: flex;
+    }
+  }
+
+  .navLink {
+    text-decoration: none;
+    color: var(--muted-foreground);
+    font-weight: 500;
+    transition: color var(--animation-duration-fast) ease;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .navDropdownWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navDropdownWrapper:hover .navDropdown {
+    display: block;
+  }
+
+  .dropdownIcon {
+    margin-left: var(--spacing-1);
+  }
+
+  .navDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: var(--spacing-2);
+    z-index: 100;
+    min-width: 220px;
+  }
+
+  .navDropdownContent {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .dropdownLink {
+    padding: var(--spacing-3) var(--spacing-4);
+    text-decoration: none;
+    color: var(--foreground);
+    font-size: 0.9375rem;
+    transition: background-color var(--animation-duration-fast) ease, color var(--animation-duration-fast) ease;
+  }
+
+  .dropdownLink:hover {
+    background-color: color-mix(in oklch, var(--primary) 10%, var(--surface));
+    color: var(--primary);
+  }
+
+  .navLink:hover {
+    color: var(--foreground);
+  }
+
+  .headerActions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+  }
+
+  .mobileMenuBtn {
+    display: flex;
+    background: none;
+    border: none;
+    color: var(--foreground);
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    .mobileMenuBtn {
+      display: none;
+    }
+  }
+
+  .contactBtn {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .contactBtn {
+      display: inline-flex;
+    }
+  }
+
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-4);
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+  }
+
+  .mobileNavLink {
+    padding: var(--spacing-3) 0;
+    text-decoration: none;
+    color: var(--foreground);
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mobileNavLink:last-child {
+    border-bottom: none;
+  }
+
+  .mobileNavGroup {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mobileNavGroup .mobileNavLink {
+    border-bottom: none;
+  }
+
+  .mobileSubNav {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--spacing-4);
+    padding-bottom: var(--spacing-3);
+  }
+
+  .mobileSubNavLink {
+    padding: var(--spacing-2) 0;
+    text-decoration: none;
+    color: var(--muted-foreground);
+    font-size: 0.9375rem;
+  }
+
+  .main {
+    flex: 1;
+    background-color: var(--background);
+  }
+
+  .footer {
+    background-color: #1a2845; /* Hardcoded Navy */
+    color: #ffffff;
+    padding: var(--spacing-12) var(--spacing-4) var(--spacing-6);
+  }
+
+  .footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-12);
+  }
+
+  @media (min-width: 768px) {
+    .footerGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .footerGrid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  .footerCol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .footerLogo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-family: var(--font-family-heading);
+    color: #ffffff;
+  }
+
+  .footerLogoIcon {
+    color: var(--primary);
+  }
+
+  .footerDesc {
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+
+  .footerHeading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  .footerList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .footerList li,
+  .footerList a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color var(--animation-duration-fast) ease;
+  }
+
+  .footerList a:hover {
+    color: var(--primary);
+  }
+
+  .socialLink {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+  }
+
+  .footerBottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    align-items: center;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.875rem;
+  }
+
+  @media (min-width: 768px) {
+    .footerBottom {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+
+  .footerLegal {
+    display: flex;
+    gap: var(--spacing-4);
+  }
+
+  .footerLegal a {
+    color: #94a3b8;
+    text-decoration: none;
+  }
+
+  .footerLegal a:hover {
+    color: #ffffff;
+  }
+}

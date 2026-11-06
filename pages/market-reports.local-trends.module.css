@@ -1,0 +1,101 @@
+@layer base {
+  .page {
+    background-color: var(--background);
+    min-height: 100vh;
+  }
+
+  /* HERO */
+  .hero {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    padding: var(--spacing-16) var(--spacing-4);
+    text-align: center;
+  }
+
+  .heroContainer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .heroTitle {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    font-family: var(--font-family-heading);
+    margin-bottom: var(--spacing-4);
+  }
+
+  .heroSubtitle {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-6);
+  }
+
+  .lastUpdatedBadge {
+    display: inline-block;
+    background-color: color-mix(in srgb, var(--primary) 20%, transparent);
+    color: var(--primary);
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* MARKET SUMMARY */
+  .marketSummarySection {
+    padding: var(--spacing-12) 0 0;
+  }
+
+  .summaryBox {
+    background-color: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-8);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+  }
+
+  .summaryTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-4) 0;
+  }
+
+  .summaryContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--muted-foreground);
+  }
+
+  .summaryContent p {
+    margin: 0;
+  }
+
+  /* CONTENT */
+  .content {
+    padding: var(--spacing-16) 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+  }
+
+  /* AUTHOR SECTION */
+  .signupSection {
+    margin-bottom: var(--spacing-12);
+  }
+
+  .authorSection {
+    padding: 0 var(--spacing-4) var(--spacing-16);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

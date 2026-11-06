@@ -1,0 +1,339 @@
+@layer base {
+  .container {
+    background: linear-gradient(135deg, var(--secondary) 0%, color-mix(in srgb, var(--secondary) 60%, var(--primary)) 100%);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+    animation: pulseGlow 3s infinite alternate;
+    overflow: hidden;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerB {
+    background: linear-gradient(135deg, hsl(140, 60%, 92%) 0%, hsl(200, 70%, 90%) 100%);
+    border: 2px solid hsl(160, 40%, 75%);
+    box-shadow: 0 10px 25px -5px hsl(160, 30%, 80%);
+    color: var(--secondary);
+  }
+
+  .progressContainer {
+    height: 4px;
+    background-color: var(--muted);
+    width: 100%;
+  }
+
+  .progressBar {
+    height: 100%;
+    background-color: var(--primary);
+    transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .progressBarB {
+    background: linear-gradient(90deg, hsl(173, 80%, 40%), hsl(140, 60%, 50%));
+  }
+
+  @keyframes pulseGlow {
+    0% {
+      box-shadow: 0 4px 6px -1px color-mix(in srgb, var(--primary) 0%, transparent);
+    }
+    100% {
+      box-shadow: 0 0 15px 2px color-mix(in srgb, var(--primary) 40%, transparent);
+    }
+  }
+
+  .badgeContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-6);
+  }
+
+  .badge {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: var(--font-family-base);
+  }
+
+  .badgeB {
+    background-color: hsl(173, 70%, 35%);
+    color: #ffffff;
+  }
+
+  .content {
+    padding: var(--spacing-6) var(--spacing-6) var(--spacing-8);
+    position: relative;
+  }
+
+  .backButton {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    background: transparent;
+    border: none;
+    color: var(--muted-foreground);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: var(--spacing-4);
+    transition: color var(--animation-duration-fast) ease;
+    font-family: var(--font-family-base);
+  }
+
+  .backButton:hover {
+    color: var(--foreground);
+  }
+
+  .stepWrapper {
+    position: relative;
+  }
+
+  .stepAnimation {
+    animation: fadeInSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes fadeInSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .title {
+    font-family: var(--font-family-heading);
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-2);
+    font-weight: 700;
+  }
+
+  .titleB {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    text-shadow: none;
+  }
+
+  .socialProof {
+    font-family: var(--font-family-base);
+    font-size: 0.875rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 var(--spacing-4);
+  }
+
+  :global(.dark) .socialProof {
+    color: color-mix(in srgb, var(--accent) 70%, white);
+  }
+
+  .socialProofB {
+    color: hsl(200, 60%, 25%);
+  }
+
+  .question {
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    color: var(--muted-foreground);
+    margin: 0 0 var(--spacing-6);
+  }
+
+  .questionB {
+    color: hsl(200, 40%, 30%);
+  }
+
+  .optionsList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .optionBtn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--spacing-4) 1.25rem;
+    background-color: color-mix(in srgb, var(--surface) 5%, transparent);
+    border: 2px solid color-mix(in srgb, var(--foreground) 15%, transparent);
+    border-radius: var(--radius-md);
+    color: var(--foreground);
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    transition: all var(--animation-duration-fast) ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .optionBtnB {
+    padding: 1.25rem 1.25rem;
+    font-size: 1.125rem;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(200, 30%, 85%);
+    color: var(--secondary);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  .optionIcon {
+    font-size: 1.25rem;
+    margin-right: var(--spacing-3);
+  }
+
+  .optionBtn:hover {
+    border-color: color-mix(in srgb, var(--foreground) 40%, transparent);
+    background-color: color-mix(in srgb, var(--foreground) 5%, transparent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px -2px color-mix(in srgb, var(--foreground) 15%, transparent);
+  }
+
+  .optionBtnB:hover {
+    background-color: hsl(160, 50%, 96%);
+    border-color: hsl(140, 40%, 75%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px -2px color-mix(in srgb, var(--secondary) 15%, transparent);
+  }
+
+  .optionBtn.selected {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--primary) 40%, transparent);
+    transform: scale(0.99);
+  }
+
+  .customTimeWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .customTimeInputContainer {
+    display: flex;
+    gap: var(--spacing-2);
+    animation: fadeInSlideUp 0.3s ease;
+  }
+
+  .customTimeInput {
+    flex: 1;
+  }
+
+  .customTimeSubmitBtn {
+    flex-shrink: 0;
+  }
+
+  .subtext {
+    font-family: var(--font-family-base);
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin: 0 0 var(--spacing-6);
+    line-height: 1.5;
+  }
+
+  .subtextB {
+    color: hsl(200, 40%, 30%);
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submitBtn {
+    margin-top: var(--spacing-4);
+    width: 100%;
+  }
+
+  .submitBtnB {
+    background-color: hsl(173, 80%, 35%);
+    border-color: hsl(173, 80%, 35%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-top: var(--spacing-3);
+    padding-bottom: var(--spacing-3);
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .submitBtnB:hover {
+    background-color: hsl(173, 80%, 30%);
+    border-color: hsl(173, 80%, 30%);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  }
+
+  .successState {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-4) 0;
+  }
+
+  .successIcon {
+    color: var(--success);
+    margin-bottom: var(--spacing-4);
+  }
+
+  .successTitle {
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-3);
+  }
+
+  .successMessage {
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    color: var(--muted-foreground);
+    line-height: 1.6;
+    margin: 0 0 var(--spacing-8);
+  }
+
+  .successMessage strong {
+    color: var(--foreground);
+    font-weight: 600;
+  }
+
+  .exploreMoreBtn {
+    width: 100%;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .content {
+      padding: 1.25rem var(--spacing-4) var(--spacing-6);
+    }
+    
+    .title {
+      font-size: 1.125rem;
+    }
+
+    .titleB {
+      font-size: 1.25rem;
+    }
+    
+    .optionBtn {
+      padding: var(--spacing-3) var(--spacing-4);
+      font-size: 0.9375rem;
+    }
+
+    .optionBtnB {
+      padding: 1rem 1rem;
+      font-size: 1rem;
+    }
+  }
+}

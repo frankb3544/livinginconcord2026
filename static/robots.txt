@@ -1,0 +1,106 @@
+User-agent: *
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: FacebookBot
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /_api/
+Disallow: /data-audit
+Disallow: /home-search-admin
+Disallow: /admin/broken-links
+Disallow: /admin/
+
+
+Sitemap: https://livinginconcordnc.com/sitemap.xml

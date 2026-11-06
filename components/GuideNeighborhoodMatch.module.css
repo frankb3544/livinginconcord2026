@@ -1,0 +1,200 @@
+@layer base {
+  .section {
+    /* Clean background to contrast with the tinted Reasons section above */
+    background-color: var(--background);
+    padding: var(--spacing-20) 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+  }
+
+  .header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--secondary); /* Navy */
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-6);
+  }
+
+  .card {
+    background-color: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-8);
+    box-shadow: var(--shadow);
+    border: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    flex: 1 1 100%;
+    transition: transform var(--animation-duration-normal) ease, box-shadow var(--animation-duration-normal) ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .tagWrapper {
+    margin-bottom: var(--spacing-2);
+  }
+
+  .tag {
+    display: inline-block;
+    background-color: color-mix(in srgb, var(--secondary) 8%, transparent);
+    color: var(--secondary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--radius-full);
+  }
+
+  .neighborhoodName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--foreground);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--muted-foreground);
+    margin: 0;
+  }
+
+  .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: var(--spacing-2);
+  }
+
+  .link {
+    margin-top: auto;
+    padding-top: var(--spacing-4);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color var(--animation-duration-fast) ease;
+  }
+
+  .link:hover {
+    color: color-mix(in srgb, var(--primary) 80%, var(--foreground));
+    text-decoration: underline;
+  }
+
+  .ctaBox {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-10) var(--spacing-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-4);
+    box-shadow: var(--shadow-md);
+  }
+
+  .ctaContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    max-width: 600px;
+  }
+
+  .ctaTitle {
+    font-family: var(--font-family-heading);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin: 0;
+    color: var(--secondary-foreground);
+  }
+
+  .ctaDescription {
+    font-size: 1.125rem;
+    color: color-mix(in srgb, var(--secondary-foreground) 80%, transparent);
+    margin: 0;
+  }
+
+  .ctaButton {
+    /* Utilizing default primary styles from the Button component, ensuring it stands out from the navy bg */
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .card {
+      flex: 1 1 calc(50% - var(--spacing-6));
+      max-width: calc(50% - (var(--spacing-6) / 2));
+    }
+
+    .ctaBox {
+      padding: var(--spacing-12);
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    .card {
+      flex: 1 1 calc(33.333% - var(--spacing-6));
+      max-width: calc(33.333% - (var(--spacing-6) * 2 / 3));
+    }
+  }
+
+  /* Dark mode specific adjustments */
+  :global(.dark) .section {
+    background-color: var(--background);
+  }
+
+  :global(.dark) .title {
+    color: var(--foreground);
+  }
+
+  :global(.dark) .tag {
+    background-color: color-mix(in srgb, var(--primary) 15%, transparent);
+    color: var(--primary);
+  }
+
+  :global(.dark) .ctaBox {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  :global(.dark) .ctaTitle {
+    color: var(--foreground);
+  }
+
+  :global(.dark) .ctaDescription {
+    color: var(--muted-foreground);
+  }
+}

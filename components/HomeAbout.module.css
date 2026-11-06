@@ -1,0 +1,170 @@
+@layer base {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding: 0 var(--spacing-8);
+    }
+  }
+
+  .sectionTitle {
+    font-family: var(--font-family-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-3) 0;
+  }
+
+  @media (min-width: 768px) {
+    .sectionTitle {
+      font-size: 2.25rem;
+    }
+  }
+
+  .aboutSection {
+    padding: var(--spacing-16) 0;
+    background-color: var(--surface);
+  }
+
+  .aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .aboutGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .aboutImageContainer {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4 / 3;
+  }
+
+  .aboutImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .aboutNameLink {
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+    text-decoration: none;
+    transition: color var(--animation-duration-fast) ease;
+    display: block;
+  }
+
+  .aboutNameLink:hover {
+    color: var(--primary);
+  }
+
+  .aboutRole {
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .aboutBio {
+    margin: 0;
+    color: var(--muted-foreground);
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  .aboutStats {
+    display: flex;
+    gap: var(--spacing-6);
+  }
+
+  .aboutStat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-1);
+  }
+
+  .aboutStatVal {
+    font-family: var(--font-family-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .aboutStatLabel {
+    font-size: 0.8rem;
+    color: var(--muted-foreground);
+    font-weight: 500;
+  }
+
+  .aboutContact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+
+  .aboutContactItem {
+    font-size: 0.95rem;
+    color: var(--foreground);
+  }
+
+  .scheduleBtn {
+    align-self: flex-start;
+  }
+
+  .whyChooseList {
+    background-color: color-mix(in srgb, var(--primary) 5%, transparent);
+    border: 1px solid color-mix(in srgb, var(--primary) 15%, transparent);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+  }
+
+  .whyChooseList h4 {
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    margin: 0 0 var(--spacing-3) 0;
+    color: var(--foreground);
+    font-size: 1rem;
+  }
+
+  .whyChooseList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+
+  .whyChooseList li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: 0.9rem;
+    color: var(--foreground);
+    line-height: 1.4;
+  }
+
+  .checkIcon {
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+}

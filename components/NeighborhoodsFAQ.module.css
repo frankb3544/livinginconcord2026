@@ -1,0 +1,30 @@
+@layer base {
+  .section {
+    padding: var(--spacing-16) var(--spacing-4);
+    background-color: var(--surface);
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-family: var(--font-family-heading);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--foreground);
+    text-align: center;
+    margin-bottom: var(--spacing-10);
+  }
+
+  .link {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .link:hover {
+    opacity: 0.8;
+  }
+}

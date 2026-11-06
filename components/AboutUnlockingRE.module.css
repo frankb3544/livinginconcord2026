@@ -1,0 +1,141 @@
+@layer base {
+  .section {
+    background-color: var(--background);
+    padding: var(--spacing-20) 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+  }
+
+  .twoCol {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-12);
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .twoCol {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-16);
+    }
+  }
+
+  .textCol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  .heading {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--foreground);
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .body {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--muted-foreground);
+    margin: 0;
+  }
+
+  .browseBtn {
+    align-self: flex-start;
+    padding-inline: var(--spacing-8);
+  }
+
+  /* Brokerage decorative card */
+  .cardCol {
+    display: flex;
+    justify-content: center;
+  }
+
+  .brokerageCard {
+    background-color: #1a2845;
+    color: #ffffff;
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-10);
+    width: 100%;
+    max-width: 400px;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  .cardHeader {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .cardHeaderIcon {
+    color: #4daf6e;
+  }
+
+  .cardBrandName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: #ffffff;
+    line-height: 1.2;
+  }
+
+  .cardDivider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .cardDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .cardDetailRow {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+  }
+
+  .detailLabel {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .detailValue {
+    font-size: 0.975rem;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.4;
+  }
+
+  .cardLink {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: #4daf6e;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .globeIcon {
+    flex-shrink: 0;
+  }
+
+  .awardIcon {
+    flex-shrink: 0;
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}

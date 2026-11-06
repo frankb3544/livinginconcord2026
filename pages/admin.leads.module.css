@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.title {
+  font-family: var(--font-family-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--muted-foreground);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.tabsRoot {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.tabsList {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  gap: var(--spacing-2);
+}
+
+.tabsTrigger {
+  all: unset;
+  font-family: var(--font-family-base);
+  background-color: transparent;
+  padding: var(--spacing-3) var(--spacing-4);
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  font-size: 0.9375rem;
+  line-height: 1;
+  color: var(--muted-foreground);
+  user-select: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: all var(--animation-duration-fast) ease;
+}
+
+.tabsTrigger:hover {
+  color: var(--foreground);
+}
+
+.tabsTrigger[data-state="active"] {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  font-weight: 500;
+}
+
+.tabBadge {
+  font-size: 0.75rem;
+  padding: 0 var(--spacing-2);
+}
+
+.tabsTrigger[data-state="active"] .tabBadge {
+  background-color: color-mix(in srgb, var(--primary) 15%, transparent);
+  color: var(--primary);
+  border-color: transparent;
+}
+
+.tabsContent {
+  flex-grow: 1;
+  outline: none;
+}
+
+.tableWrapper {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  background-color: color-mix(in srgb, var(--card) 95%, var(--muted) 5%);
+  padding: var(--spacing-4);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--spacing-4);
+  font-size: 0.9375rem;
+  color: var(--card-foreground);
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr:hover {
+  background-color: color-mix(in srgb, var(--card) 98%, var(--muted) 2%);
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.dateCell {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.contactCell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.contactCell a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contactCell a:hover {
+  text-decoration: underline;
+}
+
+.messageCell {
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+.addressCell {
+  max-width: 250px;
+  line-height: 1.5;
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--spacing-12) !important;
+  color: var(--muted-foreground);
+  font-style: italic;
+}

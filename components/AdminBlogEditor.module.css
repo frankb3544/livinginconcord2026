@@ -1,0 +1,173 @@
+@layer base {
+  .editorForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--spacing-4);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: var(--spacing-4);
+  }
+
+  .title {
+    font-family: var(--font-family-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin: 0;
+  }
+
+  .actions {
+    display: flex;
+    gap: var(--spacing-3);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+    align-items: start;
+  }
+
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  .mainColumn {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+  }
+
+  .sideColumn {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5);
+  }
+
+  .card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-5);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .cardTitle {
+    font-family: var(--font-family-heading);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin: 0;
+    padding-bottom: var(--spacing-3);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+
+  .label {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--foreground);
+  }
+
+  .titleInput {
+    font-size: 1.25rem;
+    height: 3rem;
+  }
+
+  .textarea, .textareaSmall {
+    font-family: var(--font-family-monospace);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--foreground);
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--spacing-3);
+    width: 100%;
+    resize: vertical;
+    transition: border-color var(--animation-duration-normal) ease, box-shadow var(--animation-duration-normal) ease;
+    outline: none;
+  }
+
+  .textareaSmall {
+    font-family: var(--font-family-base);
+  }
+
+  .textarea:focus, .textareaSmall:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 15%, transparent);
+  }
+
+  .select {
+    font-family: var(--font-family-base);
+    font-size: 0.9375rem;
+    color: var(--foreground);
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--spacing-2) var(--spacing-3);
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236B7280%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+  }
+
+  .select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 15%, transparent);
+  }
+
+  .imagePreview {
+    margin-top: var(--spacing-2);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background-color: var(--muted);
+    border: 1px dashed var(--border);
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .previewImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .previewPlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    color: var(--muted-foreground);
+    font-size: 0.875rem;
+  }
+
+  .placeholderIcon {
+    opacity: 0.5;
+  }
+}

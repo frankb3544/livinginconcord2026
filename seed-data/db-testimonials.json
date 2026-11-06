@@ -1,0 +1,42 @@
+[
+ {
+  "id": 3,
+  "clientName": "Sarah Johnson",
+  "location": "Afton Village",
+  "content": "We needed to sell our home fast due to a job transfer. Franklin's marketing strategy got us multiple offers within the first week, and we sold above asking price. Incredible results!",
+  "rating": 5,
+  "createdAt": "2026-03-11T04:29:07.288Z"
+ },
+ {
+  "id": 4,
+  "clientName": "Robert & Lisa Chen",
+  "location": "Christenbury",
+  "content": "We relocated from California and Franklin was incredibly patient, showing us every corner of Concord over several weekends. He found us the perfect home in Christenbury. His local knowledge is unmatched.",
+  "rating": 5,
+  "createdAt": "2026-03-11T04:29:07.288Z"
+ },
+ {
+  "id": 5,
+  "clientName": "Amanda Williams",
+  "location": "Cox Mill",
+  "content": "Franklin helped us navigate a competitive market with grace. His negotiation skills saved us thousands and we ended up in a beautiful home near great schools. Five stars all the way!",
+  "rating": 5,
+  "createdAt": "2026-03-11T04:29:07.288Z"
+ },
+ {
+  "id": 2,
+  "clientName": "David Martinez",
+  "location": "Laurel Park",
+  "content": "As a first-time homebuyer, I was nervous about the process. Franklin walked me through every step and found me an amazing condo in downtown Concord well within my budget. I highly recommend!",
+  "rating": 5,
+  "createdAt": "2026-03-11T04:29:07.288Z"
+ },
+ {
+  "id": 1,
+  "clientName": "Jennifer & Michael Thompson",
+  "location": "Highland Creek",
+  "content": "Franklin made our relocation from New York to Concord absolutely seamless. His knowledge of every neighborhood helped us find the perfect home for our family in Highland Creek. We couldn't be happier!",
+  "rating": 5,
+  "createdAt": "2026-03-11T04:29:07.288Z"
+ }
+]

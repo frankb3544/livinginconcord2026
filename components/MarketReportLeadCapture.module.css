@@ -1,0 +1,73 @@
+@layer base {
+  .container {
+    background-color: var(--surface);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    margin: var(--spacing-8) 0;
+  }
+
+  .inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+    padding: var(--spacing-8);
+  }
+
+  @media (min-width: 1024px) {
+    .inner {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+
+  .textColumn {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--foreground);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--muted-foreground);
+    margin: 0;
+  }
+
+  .formColumn {
+    background-color: var(--background);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+  }
+
+  .formGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+
+  @media (min-width: 640px) {
+    .formGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .submitBtn {
+    grid-column: 1 / -1;
+    margin-top: var(--spacing-2);
+    width: 100%;
+    padding: var(--spacing-4);
+    font-size: 1.1rem;
+  }
+}

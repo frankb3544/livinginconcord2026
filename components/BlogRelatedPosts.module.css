@@ -1,0 +1,75 @@
+@layer base {
+  .container {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .heading {
+    font-family: var(--font-family-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-4) 0;
+  }
+
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .skeletonItem {
+    padding: var(--spacing-3) 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .skeletonItem:last-child {
+    border-bottom: none;
+  }
+
+  .item {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .item:last-child {
+    border-bottom: none;
+  }
+
+  .itemLink {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) 0;
+    text-decoration: none;
+    color: var(--foreground);
+    transition: color var(--animation-duration-fast) ease;
+  }
+
+  .itemLink:hover .itemTitle {
+    color: var(--primary);
+  }
+
+  .itemTitle {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: color var(--animation-duration-fast) ease;
+  }
+
+  .itemBadge {
+    align-self: flex-start;
+    font-size: 0.75rem;
+  }
+
+  .empty {
+    color: var(--muted-foreground);
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}

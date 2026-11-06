@@ -1,0 +1,104 @@
+@layer base {
+  .container {
+    background-color: var(--surface);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .heading {
+    font-family: var(--font-family-heading);
+    font-size: 2rem;
+    color: var(--foreground);
+    margin: 0 0 var(--spacing-6) 0;
+  }
+
+  .skeletonList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .skeletonItem {
+    height: 4rem;
+    border-radius: var(--radius-md);
+  }
+
+  .empty {
+    color: var(--muted-foreground);
+    font-size: 0.9375rem;
+    margin: 0;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4) var(--spacing-5);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background-color: var(--background);
+    text-decoration: none;
+    transition: box-shadow var(--animation-duration-fast) ease,
+      border-color var(--animation-duration-fast) ease,
+      background-color var(--animation-duration-fast) ease;
+  }
+
+  .card:hover {
+    border-color: var(--primary);
+    background-color: color-mix(in srgb, var(--primary) 5%, var(--background));
+    box-shadow: var(--shadow-sm);
+  }
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    min-width: 0;
+  }
+
+  .categoryBadge {
+    font-size: 0.75rem;
+    align-self: flex-start;
+  }
+
+  .title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--foreground);
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .arrow {
+    flex-shrink: 0;
+    color: var(--primary);
+  }
+
+  .footer {
+    margin-top: var(--spacing-5);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--border);
+  }
+
+  .viewAll {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .viewAll:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,131 @@
+@layer base {
+  .section {
+    position: relative;
+    background: linear-gradient(
+      135deg,
+      var(--secondary) 0%,
+      color-mix(in srgb, var(--secondary) 60%, black) 100%
+    );
+    padding: var(--spacing-16) 0 var(--spacing-20);
+    overflow: hidden;
+    color: white;
+  }
+
+  .glow {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    height: 80vw;
+    max-width: 1000px;
+    max-height: 1000px;
+    background: radial-gradient(
+      ellipse at center,
+      color-mix(in srgb, var(--warning) 12%, transparent) 0%,
+      transparent 60%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: var(--spacing-10);
+    max-width: 600px;
+  }
+
+  .title {
+    font-family: var(--font-family-heading);
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 var(--spacing-4) 0;
+    color: white;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: color-mix(in srgb, white 80%, transparent);
+    margin: 0;
+  }
+
+  .card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+  }
+
+  @media (min-width: 768px) {
+    .card {
+      padding: var(--spacing-8) var(--spacing-10);
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  .fieldsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+
+  @media (min-width: 768px) {
+    .fieldsGrid {
+      grid-template-columns: 1fr 1.2fr 1.5fr;
+      align-items: flex-start;
+    }
+  }
+
+  .fieldItem {
+    margin-bottom: 0;
+  }
+
+  .label {
+    color: color-mix(in srgb, white 90%, transparent);
+    font-weight: 500;
+  }
+
+  .actionArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--spacing-2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-6);
+  }
+
+  .submitBtn {
+    width: 100%;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 14px color-mix(in srgb, var(--primary) 40%, transparent);
+  }
+
+  .footerNote {
+    margin: var(--spacing-4) 0 0 0;
+    font-size: 0.85rem;
+    color: color-mix(in srgb, white 60%, transparent);
+    text-align: center;
+  }
+}

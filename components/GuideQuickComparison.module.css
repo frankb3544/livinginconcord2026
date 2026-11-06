@@ -1,0 +1,139 @@
+@layer base {
+  .section {
+    padding: var(--spacing-16) 0 0;
+    background-color: var(--background);
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+  }
+
+  .title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    color: var(--foreground);
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .card {
+    background-color: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+    text-align: left;
+  }
+
+  .th,
+  .thMetric,
+  .thConcord {
+    padding: var(--spacing-4) var(--spacing-4);
+    font-family: var(--font-family-heading);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--muted-foreground);
+    border-bottom: 2px solid var(--border);
+  }
+
+  .thMetric {
+    color: var(--foreground);
+  }
+
+  .thConcord {
+    background-color: color-mix(in srgb, var(--primary) 15%, transparent);
+    color: color-mix(in srgb, var(--primary) 60%, var(--foreground));
+    border-bottom: 2px solid color-mix(in srgb, var(--primary) 30%, var(--border));
+  }
+
+  .tr {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tr:last-child {
+    border-bottom: none;
+  }
+
+  .td,
+  .tdMetric,
+  .tdConcord {
+    padding: var(--spacing-4);
+    font-size: 1rem;
+    color: var(--foreground);
+  }
+
+  .tdMetric {
+    font-weight: 500;
+  }
+
+  .tdConcord {
+    background-color: color-mix(in srgb, var(--primary) 8%, transparent);
+    font-weight: 600;
+  }
+
+  .concordValue {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+  }
+
+  .checkIcon {
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+
+  .tldrWrapper {
+    margin-top: var(--spacing-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-2);
+    text-align: center;
+  }
+
+  .tldrLabel {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted-foreground);
+  }
+
+  .tldrText {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--muted-foreground);
+    margin: 0;
+    max-width: 700px;
+  }
+
+  /* Dark mode */
+  :global(.dark) .thConcord {
+    background-color: color-mix(in srgb, var(--primary) 20%, transparent);
+    color: color-mix(in srgb, var(--primary) 80%, white);
+  }
+
+  :global(.dark) .tdConcord {
+    background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+  }
+}
