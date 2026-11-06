@@ -1,9 +1,12 @@
-import { handle } from 'hono/vercel';
-import { app } from '../app.js';
-
 // Vercel serverless entry point. vercel.json rewrites /_api/* to this
-// function; the Hono app in app.ts (shared with the local dev server in
-// server.ts) dispatches each request to the matching endpoint module.
+// function. The Hono app is bundled by scripts/bundle-server.mjs into
+// ./_app.mjs during the build (the codebase's extensionless imports
+// cannot be resolved by Node's ESM loader directly). The local dev
+// server (server.ts) runs the same app from source via tsx.
+// @ts-ignore - generated at build time
+import { app } from './_app.mjs';
+import { handle } from 'hono/vercel';
+
 const handler = handle(app);
 
 export const GET = handler;
