@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "tsx server.ts",
     "start": "tsx server.ts",
-    "build": "node scripts/maybe-apply-db.mjs && vite build && node scripts/bundle-server.mjs",
+    "build": "vite build && node scripts/bundle-server.mjs",
     "seed": "tsx scripts/seed.ts",
     "seed:lic1": "tsx scripts/seed-lic1.ts",
     "create-admin": "tsx scripts/create-admin.ts"
