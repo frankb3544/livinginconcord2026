@@ -55,4 +55,20 @@ for (const script of ["scripts/seed.ts", "scripts/seed-lic1.ts"]) {
     env: { ...process.env, DATABASE_URL: url },
   });
 }
+// Admin user: created/promoted when ADMIN_PASSWORD is present in the
+// build environment (Frank sets it in the Vercel dashboard; the value
+// never leaves Vercel). Idempotent — create-admin upserts by email.
+if (process.env.ADMIN_PASSWORD) {
+  console.log("[db-setup] ADMIN_PASSWORD present — running create-admin");
+  execFileSync("npx", ["tsx", "scripts/create-admin.ts"], {
+    stdio: "inherit",
+    env: {
+      ...process.env,
+      DATABASE_URL: url,
+      ADMIN_EMAIL: process.env.ADMIN_EMAIL || "febellamy@me.com",
+    },
+  });
+} else {
+  console.log("[db-setup] no ADMIN_PASSWORD in env — skipping admin setup");
+}
 console.log("[db-setup] done");
