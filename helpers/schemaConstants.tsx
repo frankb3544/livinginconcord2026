@@ -5,7 +5,7 @@ export const LIVING_IN_CONCORD_SCHEMA = {
   "@type": "RealEstateAgent",
   "@id": "https://livinginconcordnc.com/#organization",
   "name": "Living in Concord NC",
-  "image": "https://livinginconcordnc.com/logo.webp",
+  "image": "https://livinginconcordnc.com/logo.svg",
   "url": "https://livinginconcordnc.com",
   "telephone": "(704) 904-5142",
   "email": SITE_CONTACT_EMAIL,

@@ -27,7 +27,7 @@ export default function SharedLayout({
       <header className={styles.header}>
         <div className={styles.headerContainer}>
           <Link to="/" className={styles.logo}>
-            <img src="/logo.webp" alt="Living In Concord NC" className={styles.logoImg} />
+            <img src="/logo.svg" alt="Living In Concord NC" className={styles.logoImg} />
           </Link>
 
           <nav className={styles.desktopNav}>
@@ -321,7 +321,7 @@ export default function SharedLayout({
             <div className={styles.footerCol}>
               <div className={styles.footerLogo}>
                 <span className={styles.footerLogoChip}>
-                  <img src="/logo.webp" alt="Living In Concord NC" className={styles.footerLogoImg} />
+                  <img src="/logo.svg" alt="Living In Concord NC" className={styles.footerLogoImg} />
                 </span>
               </div>
               <p className={styles.footerDesc}>
